@@ -9,7 +9,7 @@
                             About me
                         </div>
                         <p class="about-text">
-                            I am Gonzalo, better known in internet as Aneks! I am a 16 year old self-taught peruvian developer, who is skilled both in front-end and back-end development. I started coding in 2020 making Roblox games. In 2021 I moved on to JavaScript when I started making Discord bots. Since then, I have been polishing my abilities in TypeScript and in web development, being Vue my main (and favorite) framework. <br><br>I am also a physics and mathemathics enthusiast. When I am not coding, I spend my time being a passionate baseketball player, surfer and guitarist. I also have my own small Enterprise, where I develop many startups with the hope to get recognition.
+                            I am Soraia, better known in internet as 0x4571! I am a 18 year old self-taught programmer, animator, artist and others, who is skilled both in front-end and back-end development. I started coding in 2018, making small and simple Roblox games. Since then, I have been learning with the best and have taken my skills a step further by learning how to animate Rigs (R6 and R15) on Roblox and by refining and learning new skills in the field of Computer Science. <br><br>In my free time, I like chatting with friends about philosophy, solving puzzles, or just going out for a walk. Whatever it is that you need done, I'll be here to work with you and to help you achieve your dreams!
                         </p>
                         <button class="like">
                             <span>
@@ -38,7 +38,7 @@ export default defineComponent({
     name: 'AboutComponent',
     data() {
         return {
-            count: 0
+            count: 1
         }
     },
     methods: {
