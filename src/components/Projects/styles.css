@@ -1,0 +1,95 @@
+.projects-container {
+    width: 100vw;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    gap: 2.5rem;
+    padding: 5rem 0rem;
+}
+
+@property --rotation {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+@keyframes rotate {
+    from { --rotation: 0deg; }
+    to { --rotation: 360deg; }
+}
+
+.projects-title {
+    font-size: clamp(2rem, 5vw, 3rem);
+    text-shadow: 0px 0px 15px rgba(255, 255, 255, 0.25);
+    font-weight: 700;
+    position: relative;
+    text-align: center;
+}
+
+.projects-title::before, 
+.projects-title::after {
+    content: "";
+    width: 100%;
+    height: 5px;
+    position: absolute;
+    border-radius: 3px;
+    top: 50%;
+}
+
+@media (max-width: 500px) {
+    .projects-title::before, 
+    .projects-title::after {
+        display: none;
+    }
+}
+
+.projects-title::before {
+    background-color: var(--primary);
+    left: calc(-100% - 1rem);
+    box-shadow: 0px 0px 10px var(--primary);
+}
+
+.projects-title::after {
+    background-color: var(--secondary);
+    left: calc(100% + 1rem);
+    box-shadow: 0px 0px 10px var(--secondary);
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    width: 75rem;
+    gap: 2.5rem;
+    height: fit-content;
+}
+
+@media (max-width: 80rem) {
+    .projects-grid {
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+        padding: 0rem 3rem;
+        box-sizing: border-box;
+    } 
+}
+
+
+@media (max-width: 40rem) {
+    .projects-grid {
+        grid-template-columns: 1fr;
+        width: 100%;
+        padding: 0rem 2rem;
+        box-sizing: border-box;
+    } 
+}
+
+.project-card {
+    width: 100%;
+    height: 20rem;
+    background-image: linear-gradient(to bottom right, rgba(6, 6, 6, 0.5), rgba(12, 12, 12, 0.5));
+    border-radius: 10px;
+    position: relative;
+}
