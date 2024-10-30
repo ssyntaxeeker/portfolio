@@ -4,18 +4,18 @@
             <div class="title">
                 Yo! 
                 <span class="title-small">I'm</span>
-                Gonzalo Ames
+                Soraia Santos
                 <br>
                 <span class="title-small">
                     a.k.a.
                 </span>
                 <span class="aneks">
-                    Aneks
+                    0x4571  Vesp_Ithon  Sol  
                 </span>
                 <br>
             </div>
             <span class="subtitle">
-                Self-proclaimed full-stack developer
+                Independent Game Developer
             </span>
         </div>
         <a class="arrow" href="#about">
